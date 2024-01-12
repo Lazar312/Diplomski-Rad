@@ -1,0 +1,265 @@
+Simulator report for DiplomskiRad
+Tue Sep 12 00:41:50 2023
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------+
+; Simulator Summary                            ;
++-----------------------------+----------------+
+; Type                        ; Value          ;
++-----------------------------+----------------+
+; Simulation Start Time       ; 0 ps           ;
+; Simulation End Time         ; 1.0 ms         ;
+; Simulation Netlist Size     ; 75 nodes       ;
+; Simulation Coverage         ;      59.15 %   ;
+; Total Number of Transitions ; 2193           ;
+; Simulation Breakpoints      ; 0              ;
+; Family                      ; MAX7000S       ;
+; Device                      ; EPM7128SLC84-6 ;
++-----------------------------+----------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                        ;
++--------------------------------------------------------------------------------------------+--------------+---------------+
+; Option                                                                                     ; Setting      ; Default Value ;
++--------------------------------------------------------------------------------------------+--------------+---------------+
+; Simulation mode                                                                            ; Timing       ; Timing        ;
+; Start time                                                                                 ; 0 ns         ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF         ;               ;
+; Vector input source                                                                        ; MUL2TEST.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On           ; On            ;
+; Check outputs                                                                              ; Off          ; Off           ;
+; Report simulation coverage                                                                 ; On           ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On           ; On            ;
+; Display missing 1-value coverage report                                                    ; On           ; On            ;
+; Display missing 0-value coverage report                                                    ; On           ; On            ;
+; Detect setup and hold time violations                                                      ; Off          ; Off           ;
+; Detect glitches                                                                            ; Off          ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off          ; Off           ;
+; Generate Signal Activity File                                                              ; Off          ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off          ; Off           ;
+; Group bus channels in simulation results                                                   ; Off          ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On           ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE   ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off          ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On           ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto         ; Auto          ;
++--------------------------------------------------------------------------------------------+--------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      59.15 % ;
+; Total nodes checked                                 ; 75           ;
+; Total output ports checked                          ; 71           ;
+; Total output ports with complete 1/0-value coverage ; 42           ;
+; Total output ports with no 1/0-value coverage       ; 29           ;
+; Total output ports with no 1-value coverage         ; 29           ;
+; Total output ports with no 0-value coverage         ; 29           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                    ;
++----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                    ; Output Port Name                                                                             ; Output Port Type ;
++----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+------------------+
+; |MUL2TEST|MUL2:inst|RisingEdgeDetector:inst40|inst                                           ; |MUL2TEST|MUL2:inst|RisingEdgeDetector:inst40|inst                                           ; dataout          ;
+; |MUL2TEST|MUL2:inst|REG4_LD_ST:inst44|REG2_LD_ST:inst1|REG1_LD_CL:inst5|inst                 ; |MUL2TEST|MUL2:inst|REG4_LD_ST:inst44|REG2_LD_ST:inst1|REG1_LD_CL:inst5|inst                 ; dataout          ;
+; |MUL2TEST|MUL2:inst|REG4_LD_ST:inst44|REG2_LD_ST:inst1|REG1_LD_CL:inst|inst                  ; |MUL2TEST|MUL2:inst|REG4_LD_ST:inst44|REG2_LD_ST:inst1|REG1_LD_CL:inst|inst                  ; dataout          ;
+; |MUL2TEST|MUL2:inst|REG4_LD_ST:inst44|REG2_LD_ST:inst|REG1_LD_CL:inst5|inst                  ; |MUL2TEST|MUL2:inst|REG4_LD_ST:inst44|REG2_LD_ST:inst|REG1_LD_CL:inst5|inst                  ; dataout          ;
+; |MUL2TEST|MUL2:inst|REG4_LD_ST:inst44|REG2_LD_ST:inst|REG1_LD_CL:inst|inst                   ; |MUL2TEST|MUL2:inst|REG4_LD_ST:inst44|REG2_LD_ST:inst|REG1_LD_CL:inst|inst                   ; dataout          ;
+; |MUL2TEST|MUL2:inst|RisingEdgeDetector:inst40|inst1                                          ; |MUL2TEST|MUL2:inst|RisingEdgeDetector:inst40|inst1                                          ; dataout          ;
+; |MUL2TEST|MUL2:inst|inst1                                                                    ; |MUL2TEST|MUL2:inst|inst1                                                                    ; dataout          ;
+; |MUL2TEST|MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst1|REG2_LD_ST:inst1|REG1_LD_CL:inst5|inst ; |MUL2TEST|MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst1|REG2_LD_ST:inst1|REG1_LD_CL:inst5|inst ; dataout          ;
+; |MUL2TEST|MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst1|REG2_LD_ST:inst1|REG1_LD_CL:inst|inst  ; |MUL2TEST|MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst1|REG2_LD_ST:inst1|REG1_LD_CL:inst|inst  ; dataout          ;
+; |MUL2TEST|MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst1|REG2_LD_ST:inst|REG1_LD_CL:inst5|inst  ; |MUL2TEST|MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst1|REG2_LD_ST:inst|REG1_LD_CL:inst5|inst  ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst3|ADD4:inst|ADD1:inst4|inst2~2                                  ; |MUL2TEST|MUL2:inst|ADD8:inst3|ADD4:inst|ADD1:inst4|inst2~2                                  ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst~0                                  ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst~0                                  ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~18                                ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~18                                ; dataout          ;
+; |MUL2TEST|MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst|REG2_LD_ST:inst1|REG1_LD_CL:inst|inst   ; |MUL2TEST|MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst|REG2_LD_ST:inst1|REG1_LD_CL:inst|inst   ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst4|inst1~23                                ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst4|inst1~23                                ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst4|inst1~25                                ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst4|inst1~25                                ; dataout          ;
+; |MUL2TEST|MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst|REG2_LD_ST:inst|REG1_LD_CL:inst5|inst   ; |MUL2TEST|MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst|REG2_LD_ST:inst|REG1_LD_CL:inst5|inst   ; dataout          ;
+; |MUL2TEST|MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst|REG2_LD_ST:inst|REG1_LD_CL:inst|inst    ; |MUL2TEST|MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst|REG2_LD_ST:inst|REG1_LD_CL:inst|inst    ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst3|ADD4:inst|ADD1:inst5|inst~7                                   ; |MUL2TEST|MUL2:inst|ADD8:inst3|ADD4:inst|ADD1:inst5|inst~7                                   ; pexpout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst4|inst4~6                                 ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst4|inst4~6                                 ; pexpout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst4|inst1~5sexpand0                         ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst4|inst1~5sexpand0                         ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst4|inst1~5sexpand1                         ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst4|inst1~5sexpand1                         ; dataout          ;
+; |MUL2TEST|MUL2:inst|inst36~1sexp                                                             ; |MUL2TEST|MUL2:inst|inst36~1sexp                                                             ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~11sexp2                           ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~11sexp2                           ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst|inst1~6bal                               ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst|inst1~6bal                               ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst4|inst1~5sexpand3bal                      ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst4|inst1~5sexpand3bal                      ; dataout          ;
+; |MUL2TEST|MUL                                                                                ; |MUL2TEST|MUL~corein                                                                         ; dataout          ;
+; |MUL2TEST|CLK                                                                                ; |MUL2TEST|CLK~corein                                                                         ; dataout          ;
+; |MUL2TEST|A[3]                                                                               ; |MUL2TEST|A[3]~corein                                                                        ; dataout          ;
+; |MUL2TEST|A[2]                                                                               ; |MUL2TEST|A[2]~corein                                                                        ; dataout          ;
+; |MUL2TEST|A[1]                                                                               ; |MUL2TEST|A[1]~corein                                                                        ; dataout          ;
+; |MUL2TEST|A[0]                                                                               ; |MUL2TEST|A[0]~corein                                                                        ; dataout          ;
+; |MUL2TEST|B[3]                                                                               ; |MUL2TEST|B[3]~corein                                                                        ; dataout          ;
+; |MUL2TEST|B[2]                                                                               ; |MUL2TEST|B[2]~corein                                                                        ; dataout          ;
+; |MUL2TEST|B[1]                                                                               ; |MUL2TEST|B[1]~corein                                                                        ; dataout          ;
+; |MUL2TEST|B[0]                                                                               ; |MUL2TEST|B[0]~corein                                                                        ; dataout          ;
+; |MUL2TEST|OUT[0]                                                                             ; |MUL2TEST|OUT[0]                                                                             ; padio            ;
+; |MUL2TEST|OUT[1]                                                                             ; |MUL2TEST|OUT[1]                                                                             ; padio            ;
+; |MUL2TEST|OUT[2]                                                                             ; |MUL2TEST|OUT[2]                                                                             ; padio            ;
+; |MUL2TEST|OUT[5]                                                                             ; |MUL2TEST|OUT[5]                                                                             ; padio            ;
+; |MUL2TEST|OUT[6]                                                                             ; |MUL2TEST|OUT[6]                                                                             ; padio            ;
+; |MUL2TEST|OUT[7]                                                                             ; |MUL2TEST|OUT[7]                                                                             ; padio            ;
++----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                     ;
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                   ; Output Port Name                                                                            ; Output Port Type ;
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
+; |MUL2TEST|MUL2:inst|ADD8:inst3|ADD4:inst|ADD1:inst5|inst~0                                  ; |MUL2TEST|MUL2:inst|ADD8:inst3|ADD4:inst|ADD1:inst5|inst~0                                  ; dataout          ;
+; |MUL2TEST|MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst1|REG2_LD_ST:inst|REG1_LD_CL:inst|inst  ; |MUL2TEST|MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst1|REG2_LD_ST:inst|REG1_LD_CL:inst|inst  ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst3|ADD4:inst1|ADD1:inst|inst1~5                                 ; |MUL2TEST|MUL2:inst|ADD8:inst3|ADD4:inst1|ADD1:inst|inst1~5                                 ; dataout          ;
+; |MUL2TEST|MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst|REG2_LD_ST:inst1|REG1_LD_CL:inst5|inst ; |MUL2TEST|MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst|REG2_LD_ST:inst1|REG1_LD_CL:inst5|inst ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~17                               ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~17                               ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~19                               ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~19                               ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst4|inst1~17                               ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst4|inst1~17                               ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst4|inst1~24                               ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst4|inst1~24                               ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst3|ADD4:inst|ADD1:inst4|inst~7                                  ; |MUL2TEST|MUL2:inst|ADD8:inst3|ADD4:inst|ADD1:inst4|inst~7                                  ; pexpout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst3|ADD4:inst1|ADD1:inst|inst1~6                                 ; |MUL2TEST|MUL2:inst|ADD8:inst3|ADD4:inst1|ADD1:inst|inst1~6                                 ; pexpout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst3|ADD4:inst1|ADD1:inst|inst1~12                                ; |MUL2TEST|MUL2:inst|ADD8:inst3|ADD4:inst1|ADD1:inst|inst1~12                                ; pexpout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst~7                                 ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst~7                                 ; pexpout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst~10                                ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst~10                                ; pexpout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst4|inst1~5sexpand2                        ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst4|inst1~5sexpand2                        ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst4|inst1~11sexpand3                       ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst4|inst1~11sexpand3                       ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst4|inst1~11sexpand4                       ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst4|inst1~11sexpand4                       ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst|inst1~5sexp5                            ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst|inst1~5sexp5                            ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~5sexp1                           ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~5sexp1                           ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~5sexp2                           ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~5sexp2                           ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~5sexp3                           ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~5sexp3                           ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~5sexp4                           ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~5sexp4                           ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~5sexp5                           ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~5sexp5                           ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~11sexp1                          ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~11sexp1                          ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~11sexp3                          ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~11sexp3                          ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~11sexp4                          ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~11sexp4                          ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~11sexp5                          ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~11sexp5                          ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst|inst1~11bal                             ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst|inst1~11bal                             ; dataout          ;
+; |MUL2TEST|OUT[3]                                                                            ; |MUL2TEST|OUT[3]                                                                            ; padio            ;
+; |MUL2TEST|OUT[4]                                                                            ; |MUL2TEST|OUT[4]                                                                            ; padio            ;
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                     ;
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                   ; Output Port Name                                                                            ; Output Port Type ;
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
+; |MUL2TEST|MUL2:inst|ADD8:inst3|ADD4:inst|ADD1:inst5|inst~0                                  ; |MUL2TEST|MUL2:inst|ADD8:inst3|ADD4:inst|ADD1:inst5|inst~0                                  ; dataout          ;
+; |MUL2TEST|MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst1|REG2_LD_ST:inst|REG1_LD_CL:inst|inst  ; |MUL2TEST|MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst1|REG2_LD_ST:inst|REG1_LD_CL:inst|inst  ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst3|ADD4:inst1|ADD1:inst|inst1~5                                 ; |MUL2TEST|MUL2:inst|ADD8:inst3|ADD4:inst1|ADD1:inst|inst1~5                                 ; dataout          ;
+; |MUL2TEST|MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst|REG2_LD_ST:inst1|REG1_LD_CL:inst5|inst ; |MUL2TEST|MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst|REG2_LD_ST:inst1|REG1_LD_CL:inst5|inst ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~17                               ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~17                               ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~19                               ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~19                               ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst4|inst1~17                               ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst4|inst1~17                               ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst4|inst1~24                               ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst4|inst1~24                               ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst3|ADD4:inst|ADD1:inst4|inst~7                                  ; |MUL2TEST|MUL2:inst|ADD8:inst3|ADD4:inst|ADD1:inst4|inst~7                                  ; pexpout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst3|ADD4:inst1|ADD1:inst|inst1~6                                 ; |MUL2TEST|MUL2:inst|ADD8:inst3|ADD4:inst1|ADD1:inst|inst1~6                                 ; pexpout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst3|ADD4:inst1|ADD1:inst|inst1~12                                ; |MUL2TEST|MUL2:inst|ADD8:inst3|ADD4:inst1|ADD1:inst|inst1~12                                ; pexpout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst~7                                 ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst~7                                 ; pexpout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst~10                                ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst~10                                ; pexpout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst4|inst1~5sexpand2                        ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst4|inst1~5sexpand2                        ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst4|inst1~11sexpand3                       ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst4|inst1~11sexpand3                       ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst4|inst1~11sexpand4                       ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst4|inst1~11sexpand4                       ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst|inst1~5sexp5                            ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst|inst1~5sexp5                            ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~5sexp1                           ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~5sexp1                           ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~5sexp2                           ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~5sexp2                           ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~5sexp3                           ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~5sexp3                           ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~5sexp4                           ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~5sexp4                           ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~5sexp5                           ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~5sexp5                           ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~11sexp1                          ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~11sexp1                          ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~11sexp3                          ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~11sexp3                          ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~11sexp4                          ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~11sexp4                          ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~11sexp5                          ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1|inst1~11sexp5                          ; dataout          ;
+; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst|inst1~11bal                             ; |MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst|inst1~11bal                             ; dataout          ;
+; |MUL2TEST|OUT[3]                                                                            ; |MUL2TEST|OUT[3]                                                                            ; padio            ;
+; |MUL2TEST|OUT[4]                                                                            ; |MUL2TEST|OUT[4]                                                                            ; padio            ;
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Tue Sep 12 00:41:50 2023
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off DiplomskiRad -c DiplomskiRad
+Info: Using vector source file "C:/Users/masam/Desktop/Diplomski lazar/MUL2TEST.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of MUL2TEST.vwf called DiplomskiRad.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      59.15 %
+Info: Number of transitions in simulation is 2193
+Info: Vector file MUL2TEST.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 157 megabytes
+    Info: Processing ended: Tue Sep 12 00:41:50 2023
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
