@@ -1,0 +1,1042 @@
+|MUL2TEST
+OUT[0] <= MUL2:inst.OUT[0]
+OUT[1] <= MUL2:inst.OUT[1]
+OUT[2] <= MUL2:inst.OUT[2]
+OUT[3] <= MUL2:inst.OUT[3]
+OUT[4] <= MUL2:inst.OUT[4]
+OUT[5] <= MUL2:inst.OUT[5]
+OUT[6] <= MUL2:inst.OUT[6]
+OUT[7] <= MUL2:inst.OUT[7]
+MUL => MUL2:inst.MULTIPLY
+CLK => MUL2:inst.CLK
+A[0] => MUL2:inst.A[0]
+A[1] => MUL2:inst.A[1]
+A[2] => MUL2:inst.A[2]
+A[3] => MUL2:inst.A[3]
+B[0] => MUL2:inst.B[0]
+B[1] => MUL2:inst.B[1]
+B[2] => MUL2:inst.B[2]
+B[3] => MUL2:inst.B[3]
+
+
+|MUL2TEST|MUL2:inst
+OUT[0] <= REG8_LD_ST:inst5.OUT[0]
+OUT[1] <= REG8_LD_ST:inst5.OUT[1]
+OUT[2] <= REG8_LD_ST:inst5.OUT[2]
+OUT[3] <= REG8_LD_ST:inst5.OUT[3]
+OUT[4] <= REG8_LD_ST:inst5.OUT[4]
+OUT[5] <= REG8_LD_ST:inst5.OUT[5]
+OUT[6] <= REG8_LD_ST:inst5.OUT[6]
+OUT[7] <= REG8_LD_ST:inst5.OUT[7]
+CLK => inst1.CLK
+CLK => RisingEdgeDetector:inst40.CLK
+CLK => REG8_LD_ST:inst5.CLK
+CLK => REG4_LD_ST:inst44.CLK
+CLK => REG4_LD_ST:inst39.CLK
+MULTIPLY => RisingEdgeDetector:inst40.IN
+MULTIPLY => REG4_LD_ST:inst44.LD
+MULTIPLY => REG4_LD_ST:inst39.LD
+B[0] => REG4_LD_ST:inst44.I[0]
+B[1] => REG4_LD_ST:inst44.I[1]
+B[2] => REG4_LD_ST:inst44.I[2]
+B[3] => REG4_LD_ST:inst44.I[3]
+A[0] => REG4_LD_ST:inst39.I[0]
+A[1] => REG4_LD_ST:inst39.I[1]
+A[2] => REG4_LD_ST:inst39.I[2]
+A[3] => REG4_LD_ST:inst39.I[3]
+
+
+|MUL2TEST|MUL2:inst|REG8_LD_ST:inst5
+OUT[0] <= REG4_LD_ST:inst1.OUT[0]
+OUT[1] <= REG4_LD_ST:inst1.OUT[1]
+OUT[2] <= REG4_LD_ST:inst1.OUT[2]
+OUT[3] <= REG4_LD_ST:inst1.OUT[3]
+OUT[4] <= REG4_LD_ST:inst.OUT[0]
+OUT[5] <= REG4_LD_ST:inst.OUT[1]
+OUT[6] <= REG4_LD_ST:inst.OUT[2]
+OUT[7] <= REG4_LD_ST:inst.OUT[3]
+LD => REG4_LD_ST:inst1.LD
+LD => REG4_LD_ST:inst.LD
+CL => REG4_LD_ST:inst1.CL
+CL => REG4_LD_ST:inst.CL
+CLK => REG4_LD_ST:inst1.CLK
+CLK => REG4_LD_ST:inst.CLK
+mr => REG4_LD_ST:inst1.mr
+mr => REG4_LD_ST:inst.mr
+I[0] => REG4_LD_ST:inst1.I[0]
+I[1] => REG4_LD_ST:inst1.I[1]
+I[2] => REG4_LD_ST:inst1.I[2]
+I[3] => REG4_LD_ST:inst1.I[3]
+I[4] => REG4_LD_ST:inst.I[0]
+I[5] => REG4_LD_ST:inst.I[1]
+I[6] => REG4_LD_ST:inst.I[2]
+I[7] => REG4_LD_ST:inst.I[3]
+
+
+|MUL2TEST|MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst1
+OUT[0] <= REG2_LD_ST:inst1.OUT[0]
+OUT[1] <= REG2_LD_ST:inst1.OUT[1]
+OUT[2] <= REG2_LD_ST:inst.OUT[0]
+OUT[3] <= REG2_LD_ST:inst.OUT[1]
+LD => REG2_LD_ST:inst1.LD
+LD => REG2_LD_ST:inst.LD
+CL => REG2_LD_ST:inst1.CL
+CL => REG2_LD_ST:inst.CL
+CLK => REG2_LD_ST:inst1.CLK
+CLK => REG2_LD_ST:inst.CLK
+mr => REG2_LD_ST:inst1.mr
+mr => REG2_LD_ST:inst.mr
+I[0] => REG2_LD_ST:inst1.I[0]
+I[1] => REG2_LD_ST:inst1.I[1]
+I[2] => REG2_LD_ST:inst.I[0]
+I[3] => REG2_LD_ST:inst.I[1]
+
+
+|MUL2TEST|MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst1|REG2_LD_ST:inst1
+OUT[0] <= REG1_LD_CL:inst5.pin_name
+OUT[1] <= REG1_LD_CL:inst.pin_name
+I[0] => REG1_LD_CL:inst5.li
+I[1] => REG1_LD_CL:inst.li
+LD => REG1_LD_CL:inst5.LD
+LD => REG1_LD_CL:inst.LD
+CL => REG1_LD_CL:inst5.CL
+CL => REG1_LD_CL:inst.CL
+CLK => REG1_LD_CL:inst5.CLK
+CLK => REG1_LD_CL:inst.CLK
+mr => REG1_LD_CL:inst5.mr
+mr => REG1_LD_CL:inst.mr
+
+
+|MUL2TEST|MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst1|REG2_LD_ST:inst1|REG1_LD_CL:inst5
+pin_name <= inst.DB_MAX_OUTPUT_PORT_TYPE
+mr => inst4.IN0
+CLK => inst.CLK
+LD => inst6.IN0
+LD => inst1.IN1
+CL => inst5.IN0
+li => inst1.IN0
+
+
+|MUL2TEST|MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst1|REG2_LD_ST:inst1|REG1_LD_CL:inst
+pin_name <= inst.DB_MAX_OUTPUT_PORT_TYPE
+mr => inst4.IN0
+CLK => inst.CLK
+LD => inst6.IN0
+LD => inst1.IN1
+CL => inst5.IN0
+li => inst1.IN0
+
+
+|MUL2TEST|MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst1|REG2_LD_ST:inst
+OUT[0] <= REG1_LD_CL:inst5.pin_name
+OUT[1] <= REG1_LD_CL:inst.pin_name
+I[0] => REG1_LD_CL:inst5.li
+I[1] => REG1_LD_CL:inst.li
+LD => REG1_LD_CL:inst5.LD
+LD => REG1_LD_CL:inst.LD
+CL => REG1_LD_CL:inst5.CL
+CL => REG1_LD_CL:inst.CL
+CLK => REG1_LD_CL:inst5.CLK
+CLK => REG1_LD_CL:inst.CLK
+mr => REG1_LD_CL:inst5.mr
+mr => REG1_LD_CL:inst.mr
+
+
+|MUL2TEST|MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst1|REG2_LD_ST:inst|REG1_LD_CL:inst5
+pin_name <= inst.DB_MAX_OUTPUT_PORT_TYPE
+mr => inst4.IN0
+CLK => inst.CLK
+LD => inst6.IN0
+LD => inst1.IN1
+CL => inst5.IN0
+li => inst1.IN0
+
+
+|MUL2TEST|MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst1|REG2_LD_ST:inst|REG1_LD_CL:inst
+pin_name <= inst.DB_MAX_OUTPUT_PORT_TYPE
+mr => inst4.IN0
+CLK => inst.CLK
+LD => inst6.IN0
+LD => inst1.IN1
+CL => inst5.IN0
+li => inst1.IN0
+
+
+|MUL2TEST|MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst
+OUT[0] <= REG2_LD_ST:inst1.OUT[0]
+OUT[1] <= REG2_LD_ST:inst1.OUT[1]
+OUT[2] <= REG2_LD_ST:inst.OUT[0]
+OUT[3] <= REG2_LD_ST:inst.OUT[1]
+LD => REG2_LD_ST:inst1.LD
+LD => REG2_LD_ST:inst.LD
+CL => REG2_LD_ST:inst1.CL
+CL => REG2_LD_ST:inst.CL
+CLK => REG2_LD_ST:inst1.CLK
+CLK => REG2_LD_ST:inst.CLK
+mr => REG2_LD_ST:inst1.mr
+mr => REG2_LD_ST:inst.mr
+I[0] => REG2_LD_ST:inst1.I[0]
+I[1] => REG2_LD_ST:inst1.I[1]
+I[2] => REG2_LD_ST:inst.I[0]
+I[3] => REG2_LD_ST:inst.I[1]
+
+
+|MUL2TEST|MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst|REG2_LD_ST:inst1
+OUT[0] <= REG1_LD_CL:inst5.pin_name
+OUT[1] <= REG1_LD_CL:inst.pin_name
+I[0] => REG1_LD_CL:inst5.li
+I[1] => REG1_LD_CL:inst.li
+LD => REG1_LD_CL:inst5.LD
+LD => REG1_LD_CL:inst.LD
+CL => REG1_LD_CL:inst5.CL
+CL => REG1_LD_CL:inst.CL
+CLK => REG1_LD_CL:inst5.CLK
+CLK => REG1_LD_CL:inst.CLK
+mr => REG1_LD_CL:inst5.mr
+mr => REG1_LD_CL:inst.mr
+
+
+|MUL2TEST|MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst|REG2_LD_ST:inst1|REG1_LD_CL:inst5
+pin_name <= inst.DB_MAX_OUTPUT_PORT_TYPE
+mr => inst4.IN0
+CLK => inst.CLK
+LD => inst6.IN0
+LD => inst1.IN1
+CL => inst5.IN0
+li => inst1.IN0
+
+
+|MUL2TEST|MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst|REG2_LD_ST:inst1|REG1_LD_CL:inst
+pin_name <= inst.DB_MAX_OUTPUT_PORT_TYPE
+mr => inst4.IN0
+CLK => inst.CLK
+LD => inst6.IN0
+LD => inst1.IN1
+CL => inst5.IN0
+li => inst1.IN0
+
+
+|MUL2TEST|MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst|REG2_LD_ST:inst
+OUT[0] <= REG1_LD_CL:inst5.pin_name
+OUT[1] <= REG1_LD_CL:inst.pin_name
+I[0] => REG1_LD_CL:inst5.li
+I[1] => REG1_LD_CL:inst.li
+LD => REG1_LD_CL:inst5.LD
+LD => REG1_LD_CL:inst.LD
+CL => REG1_LD_CL:inst5.CL
+CL => REG1_LD_CL:inst.CL
+CLK => REG1_LD_CL:inst5.CLK
+CLK => REG1_LD_CL:inst.CLK
+mr => REG1_LD_CL:inst5.mr
+mr => REG1_LD_CL:inst.mr
+
+
+|MUL2TEST|MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst|REG2_LD_ST:inst|REG1_LD_CL:inst5
+pin_name <= inst.DB_MAX_OUTPUT_PORT_TYPE
+mr => inst4.IN0
+CLK => inst.CLK
+LD => inst6.IN0
+LD => inst1.IN1
+CL => inst5.IN0
+li => inst1.IN0
+
+
+|MUL2TEST|MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst|REG2_LD_ST:inst|REG1_LD_CL:inst
+pin_name <= inst.DB_MAX_OUTPUT_PORT_TYPE
+mr => inst4.IN0
+CLK => inst.CLK
+LD => inst6.IN0
+LD => inst1.IN1
+CL => inst5.IN0
+li => inst1.IN0
+
+
+|MUL2TEST|MUL2:inst|RisingEdgeDetector:inst40
+OUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+CLK => inst1.CLK
+IN => inst.DATAIN
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst4
+Cout <= ADD4:inst1.Cout
+Cin => ADD4:inst.Cin
+A[0] => ADD4:inst.A[0]
+A[1] => ADD4:inst.A[1]
+A[2] => ADD4:inst.A[2]
+A[3] => ADD4:inst.A[3]
+A[4] => ADD4:inst1.A[0]
+A[5] => ADD4:inst1.A[1]
+A[6] => ADD4:inst1.A[2]
+A[7] => ADD4:inst1.A[3]
+B[0] => ADD4:inst.B[0]
+B[1] => ADD4:inst.B[1]
+B[2] => ADD4:inst.B[2]
+B[3] => ADD4:inst.B[3]
+B[4] => ADD4:inst1.B[0]
+B[5] => ADD4:inst1.B[1]
+B[6] => ADD4:inst1.B[2]
+B[7] => ADD4:inst1.B[3]
+S[0] <= ADD4:inst.S[0]
+S[1] <= ADD4:inst.S[1]
+S[2] <= ADD4:inst.S[2]
+S[3] <= ADD4:inst.S[3]
+S[4] <= ADD4:inst1.S[0]
+S[5] <= ADD4:inst1.S[1]
+S[6] <= ADD4:inst1.S[2]
+S[7] <= ADD4:inst1.S[3]
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1
+Cout <= ADD1:inst5.Cout
+A[0] => ADD1:inst.A
+A[1] => ADD1:inst1.A
+A[2] => ADD1:inst4.A
+A[3] => ADD1:inst5.A
+B[0] => ADD1:inst.B
+B[1] => ADD1:inst1.B
+B[2] => ADD1:inst4.B
+B[3] => ADD1:inst5.B
+Cin => ADD1:inst.Cin
+S[0] <= ADD1:inst.S
+S[1] <= ADD1:inst1.S
+S[2] <= ADD1:inst4.S
+S[3] <= ADD1:inst5.S
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst5
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst4
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst
+Cout <= ADD1:inst5.Cout
+A[0] => ADD1:inst.A
+A[1] => ADD1:inst1.A
+A[2] => ADD1:inst4.A
+A[3] => ADD1:inst5.A
+B[0] => ADD1:inst.B
+B[1] => ADD1:inst1.B
+B[2] => ADD1:inst4.B
+B[3] => ADD1:inst5.B
+Cin => ADD1:inst.Cin
+S[0] <= ADD1:inst.S
+S[1] <= ADD1:inst1.S
+S[2] <= ADD1:inst4.S
+S[3] <= ADD1:inst5.S
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst|ADD1:inst5
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst|ADD1:inst4
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst|ADD1:inst1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst4|ADD4:inst|ADD1:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUL2TEST|MUL2:inst|REG4_LD_ST:inst44
+OUT[0] <= REG2_LD_ST:inst1.OUT[0]
+OUT[1] <= REG2_LD_ST:inst1.OUT[1]
+OUT[2] <= REG2_LD_ST:inst.OUT[0]
+OUT[3] <= REG2_LD_ST:inst.OUT[1]
+LD => REG2_LD_ST:inst1.LD
+LD => REG2_LD_ST:inst.LD
+CL => REG2_LD_ST:inst1.CL
+CL => REG2_LD_ST:inst.CL
+CLK => REG2_LD_ST:inst1.CLK
+CLK => REG2_LD_ST:inst.CLK
+mr => REG2_LD_ST:inst1.mr
+mr => REG2_LD_ST:inst.mr
+I[0] => REG2_LD_ST:inst1.I[0]
+I[1] => REG2_LD_ST:inst1.I[1]
+I[2] => REG2_LD_ST:inst.I[0]
+I[3] => REG2_LD_ST:inst.I[1]
+
+
+|MUL2TEST|MUL2:inst|REG4_LD_ST:inst44|REG2_LD_ST:inst1
+OUT[0] <= REG1_LD_CL:inst5.pin_name
+OUT[1] <= REG1_LD_CL:inst.pin_name
+I[0] => REG1_LD_CL:inst5.li
+I[1] => REG1_LD_CL:inst.li
+LD => REG1_LD_CL:inst5.LD
+LD => REG1_LD_CL:inst.LD
+CL => REG1_LD_CL:inst5.CL
+CL => REG1_LD_CL:inst.CL
+CLK => REG1_LD_CL:inst5.CLK
+CLK => REG1_LD_CL:inst.CLK
+mr => REG1_LD_CL:inst5.mr
+mr => REG1_LD_CL:inst.mr
+
+
+|MUL2TEST|MUL2:inst|REG4_LD_ST:inst44|REG2_LD_ST:inst1|REG1_LD_CL:inst5
+pin_name <= inst.DB_MAX_OUTPUT_PORT_TYPE
+mr => inst4.IN0
+CLK => inst.CLK
+LD => inst6.IN0
+LD => inst1.IN1
+CL => inst5.IN0
+li => inst1.IN0
+
+
+|MUL2TEST|MUL2:inst|REG4_LD_ST:inst44|REG2_LD_ST:inst1|REG1_LD_CL:inst
+pin_name <= inst.DB_MAX_OUTPUT_PORT_TYPE
+mr => inst4.IN0
+CLK => inst.CLK
+LD => inst6.IN0
+LD => inst1.IN1
+CL => inst5.IN0
+li => inst1.IN0
+
+
+|MUL2TEST|MUL2:inst|REG4_LD_ST:inst44|REG2_LD_ST:inst
+OUT[0] <= REG1_LD_CL:inst5.pin_name
+OUT[1] <= REG1_LD_CL:inst.pin_name
+I[0] => REG1_LD_CL:inst5.li
+I[1] => REG1_LD_CL:inst.li
+LD => REG1_LD_CL:inst5.LD
+LD => REG1_LD_CL:inst.LD
+CL => REG1_LD_CL:inst5.CL
+CL => REG1_LD_CL:inst.CL
+CLK => REG1_LD_CL:inst5.CLK
+CLK => REG1_LD_CL:inst.CLK
+mr => REG1_LD_CL:inst5.mr
+mr => REG1_LD_CL:inst.mr
+
+
+|MUL2TEST|MUL2:inst|REG4_LD_ST:inst44|REG2_LD_ST:inst|REG1_LD_CL:inst5
+pin_name <= inst.DB_MAX_OUTPUT_PORT_TYPE
+mr => inst4.IN0
+CLK => inst.CLK
+LD => inst6.IN0
+LD => inst1.IN1
+CL => inst5.IN0
+li => inst1.IN0
+
+
+|MUL2TEST|MUL2:inst|REG4_LD_ST:inst44|REG2_LD_ST:inst|REG1_LD_CL:inst
+pin_name <= inst.DB_MAX_OUTPUT_PORT_TYPE
+mr => inst4.IN0
+CLK => inst.CLK
+LD => inst6.IN0
+LD => inst1.IN1
+CL => inst5.IN0
+li => inst1.IN0
+
+
+|MUL2TEST|MUL2:inst|REG4_LD_ST:inst39
+OUT[0] <= REG2_LD_ST:inst1.OUT[0]
+OUT[1] <= REG2_LD_ST:inst1.OUT[1]
+OUT[2] <= REG2_LD_ST:inst.OUT[0]
+OUT[3] <= REG2_LD_ST:inst.OUT[1]
+LD => REG2_LD_ST:inst1.LD
+LD => REG2_LD_ST:inst.LD
+CL => REG2_LD_ST:inst1.CL
+CL => REG2_LD_ST:inst.CL
+CLK => REG2_LD_ST:inst1.CLK
+CLK => REG2_LD_ST:inst.CLK
+mr => REG2_LD_ST:inst1.mr
+mr => REG2_LD_ST:inst.mr
+I[0] => REG2_LD_ST:inst1.I[0]
+I[1] => REG2_LD_ST:inst1.I[1]
+I[2] => REG2_LD_ST:inst.I[0]
+I[3] => REG2_LD_ST:inst.I[1]
+
+
+|MUL2TEST|MUL2:inst|REG4_LD_ST:inst39|REG2_LD_ST:inst1
+OUT[0] <= REG1_LD_CL:inst5.pin_name
+OUT[1] <= REG1_LD_CL:inst.pin_name
+I[0] => REG1_LD_CL:inst5.li
+I[1] => REG1_LD_CL:inst.li
+LD => REG1_LD_CL:inst5.LD
+LD => REG1_LD_CL:inst.LD
+CL => REG1_LD_CL:inst5.CL
+CL => REG1_LD_CL:inst.CL
+CLK => REG1_LD_CL:inst5.CLK
+CLK => REG1_LD_CL:inst.CLK
+mr => REG1_LD_CL:inst5.mr
+mr => REG1_LD_CL:inst.mr
+
+
+|MUL2TEST|MUL2:inst|REG4_LD_ST:inst39|REG2_LD_ST:inst1|REG1_LD_CL:inst5
+pin_name <= inst.DB_MAX_OUTPUT_PORT_TYPE
+mr => inst4.IN0
+CLK => inst.CLK
+LD => inst6.IN0
+LD => inst1.IN1
+CL => inst5.IN0
+li => inst1.IN0
+
+
+|MUL2TEST|MUL2:inst|REG4_LD_ST:inst39|REG2_LD_ST:inst1|REG1_LD_CL:inst
+pin_name <= inst.DB_MAX_OUTPUT_PORT_TYPE
+mr => inst4.IN0
+CLK => inst.CLK
+LD => inst6.IN0
+LD => inst1.IN1
+CL => inst5.IN0
+li => inst1.IN0
+
+
+|MUL2TEST|MUL2:inst|REG4_LD_ST:inst39|REG2_LD_ST:inst
+OUT[0] <= REG1_LD_CL:inst5.pin_name
+OUT[1] <= REG1_LD_CL:inst.pin_name
+I[0] => REG1_LD_CL:inst5.li
+I[1] => REG1_LD_CL:inst.li
+LD => REG1_LD_CL:inst5.LD
+LD => REG1_LD_CL:inst.LD
+CL => REG1_LD_CL:inst5.CL
+CL => REG1_LD_CL:inst.CL
+CLK => REG1_LD_CL:inst5.CLK
+CLK => REG1_LD_CL:inst.CLK
+mr => REG1_LD_CL:inst5.mr
+mr => REG1_LD_CL:inst.mr
+
+
+|MUL2TEST|MUL2:inst|REG4_LD_ST:inst39|REG2_LD_ST:inst|REG1_LD_CL:inst5
+pin_name <= inst.DB_MAX_OUTPUT_PORT_TYPE
+mr => inst4.IN0
+CLK => inst.CLK
+LD => inst6.IN0
+LD => inst1.IN1
+CL => inst5.IN0
+li => inst1.IN0
+
+
+|MUL2TEST|MUL2:inst|REG4_LD_ST:inst39|REG2_LD_ST:inst|REG1_LD_CL:inst
+pin_name <= inst.DB_MAX_OUTPUT_PORT_TYPE
+mr => inst4.IN0
+CLK => inst.CLK
+LD => inst6.IN0
+LD => inst1.IN1
+CL => inst5.IN0
+li => inst1.IN0
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst3
+Cout <= ADD4:inst1.Cout
+Cin => ADD4:inst.Cin
+A[0] => ADD4:inst.A[0]
+A[1] => ADD4:inst.A[1]
+A[2] => ADD4:inst.A[2]
+A[3] => ADD4:inst.A[3]
+A[4] => ADD4:inst1.A[0]
+A[5] => ADD4:inst1.A[1]
+A[6] => ADD4:inst1.A[2]
+A[7] => ADD4:inst1.A[3]
+B[0] => ADD4:inst.B[0]
+B[1] => ADD4:inst.B[1]
+B[2] => ADD4:inst.B[2]
+B[3] => ADD4:inst.B[3]
+B[4] => ADD4:inst1.B[0]
+B[5] => ADD4:inst1.B[1]
+B[6] => ADD4:inst1.B[2]
+B[7] => ADD4:inst1.B[3]
+S[0] <= ADD4:inst.S[0]
+S[1] <= ADD4:inst.S[1]
+S[2] <= ADD4:inst.S[2]
+S[3] <= ADD4:inst.S[3]
+S[4] <= ADD4:inst1.S[0]
+S[5] <= ADD4:inst1.S[1]
+S[6] <= ADD4:inst1.S[2]
+S[7] <= ADD4:inst1.S[3]
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst3|ADD4:inst1
+Cout <= ADD1:inst5.Cout
+A[0] => ADD1:inst.A
+A[1] => ADD1:inst1.A
+A[2] => ADD1:inst4.A
+A[3] => ADD1:inst5.A
+B[0] => ADD1:inst.B
+B[1] => ADD1:inst1.B
+B[2] => ADD1:inst4.B
+B[3] => ADD1:inst5.B
+Cin => ADD1:inst.Cin
+S[0] <= ADD1:inst.S
+S[1] <= ADD1:inst1.S
+S[2] <= ADD1:inst4.S
+S[3] <= ADD1:inst5.S
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst3|ADD4:inst1|ADD1:inst5
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst3|ADD4:inst1|ADD1:inst4
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst3|ADD4:inst1|ADD1:inst1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst3|ADD4:inst1|ADD1:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst3|ADD4:inst
+Cout <= ADD1:inst5.Cout
+A[0] => ADD1:inst.A
+A[1] => ADD1:inst1.A
+A[2] => ADD1:inst4.A
+A[3] => ADD1:inst5.A
+B[0] => ADD1:inst.B
+B[1] => ADD1:inst1.B
+B[2] => ADD1:inst4.B
+B[3] => ADD1:inst5.B
+Cin => ADD1:inst.Cin
+S[0] <= ADD1:inst.S
+S[1] <= ADD1:inst1.S
+S[2] <= ADD1:inst4.S
+S[3] <= ADD1:inst5.S
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst3|ADD4:inst|ADD1:inst5
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst3|ADD4:inst|ADD1:inst4
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst3|ADD4:inst|ADD1:inst1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst3|ADD4:inst|ADD1:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst2
+Cout <= ADD4:inst1.Cout
+Cin => ADD4:inst.Cin
+A[0] => ADD4:inst.A[0]
+A[1] => ADD4:inst.A[1]
+A[2] => ADD4:inst.A[2]
+A[3] => ADD4:inst.A[3]
+A[4] => ADD4:inst1.A[0]
+A[5] => ADD4:inst1.A[1]
+A[6] => ADD4:inst1.A[2]
+A[7] => ADD4:inst1.A[3]
+B[0] => ADD4:inst.B[0]
+B[1] => ADD4:inst.B[1]
+B[2] => ADD4:inst.B[2]
+B[3] => ADD4:inst.B[3]
+B[4] => ADD4:inst1.B[0]
+B[5] => ADD4:inst1.B[1]
+B[6] => ADD4:inst1.B[2]
+B[7] => ADD4:inst1.B[3]
+S[0] <= ADD4:inst.S[0]
+S[1] <= ADD4:inst.S[1]
+S[2] <= ADD4:inst.S[2]
+S[3] <= ADD4:inst.S[3]
+S[4] <= ADD4:inst1.S[0]
+S[5] <= ADD4:inst1.S[1]
+S[6] <= ADD4:inst1.S[2]
+S[7] <= ADD4:inst1.S[3]
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst2|ADD4:inst1
+Cout <= ADD1:inst5.Cout
+A[0] => ADD1:inst.A
+A[1] => ADD1:inst1.A
+A[2] => ADD1:inst4.A
+A[3] => ADD1:inst5.A
+B[0] => ADD1:inst.B
+B[1] => ADD1:inst1.B
+B[2] => ADD1:inst4.B
+B[3] => ADD1:inst5.B
+Cin => ADD1:inst.Cin
+S[0] <= ADD1:inst.S
+S[1] <= ADD1:inst1.S
+S[2] <= ADD1:inst4.S
+S[3] <= ADD1:inst5.S
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst2|ADD4:inst1|ADD1:inst5
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst2|ADD4:inst1|ADD1:inst4
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst2|ADD4:inst1|ADD1:inst1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst2|ADD4:inst1|ADD1:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst2|ADD4:inst
+Cout <= ADD1:inst5.Cout
+A[0] => ADD1:inst.A
+A[1] => ADD1:inst1.A
+A[2] => ADD1:inst4.A
+A[3] => ADD1:inst5.A
+B[0] => ADD1:inst.B
+B[1] => ADD1:inst1.B
+B[2] => ADD1:inst4.B
+B[3] => ADD1:inst5.B
+Cin => ADD1:inst.Cin
+S[0] <= ADD1:inst.S
+S[1] <= ADD1:inst1.S
+S[2] <= ADD1:inst4.S
+S[3] <= ADD1:inst5.S
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst2|ADD4:inst|ADD1:inst5
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst2|ADD4:inst|ADD1:inst4
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst2|ADD4:inst|ADD1:inst1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst2|ADD4:inst|ADD1:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst
+Cout <= ADD4:inst1.Cout
+Cin => ADD4:inst.Cin
+A[0] => ADD4:inst.A[0]
+A[1] => ADD4:inst.A[1]
+A[2] => ADD4:inst.A[2]
+A[3] => ADD4:inst.A[3]
+A[4] => ADD4:inst1.A[0]
+A[5] => ADD4:inst1.A[1]
+A[6] => ADD4:inst1.A[2]
+A[7] => ADD4:inst1.A[3]
+B[0] => ADD4:inst.B[0]
+B[1] => ADD4:inst.B[1]
+B[2] => ADD4:inst.B[2]
+B[3] => ADD4:inst.B[3]
+B[4] => ADD4:inst1.B[0]
+B[5] => ADD4:inst1.B[1]
+B[6] => ADD4:inst1.B[2]
+B[7] => ADD4:inst1.B[3]
+S[0] <= ADD4:inst.S[0]
+S[1] <= ADD4:inst.S[1]
+S[2] <= ADD4:inst.S[2]
+S[3] <= ADD4:inst.S[3]
+S[4] <= ADD4:inst1.S[0]
+S[5] <= ADD4:inst1.S[1]
+S[6] <= ADD4:inst1.S[2]
+S[7] <= ADD4:inst1.S[3]
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst|ADD4:inst1
+Cout <= ADD1:inst5.Cout
+A[0] => ADD1:inst.A
+A[1] => ADD1:inst1.A
+A[2] => ADD1:inst4.A
+A[3] => ADD1:inst5.A
+B[0] => ADD1:inst.B
+B[1] => ADD1:inst1.B
+B[2] => ADD1:inst4.B
+B[3] => ADD1:inst5.B
+Cin => ADD1:inst.Cin
+S[0] <= ADD1:inst.S
+S[1] <= ADD1:inst1.S
+S[2] <= ADD1:inst4.S
+S[3] <= ADD1:inst5.S
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst|ADD4:inst1|ADD1:inst5
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst|ADD4:inst1|ADD1:inst4
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst|ADD4:inst1|ADD1:inst1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst|ADD4:inst1|ADD1:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst|ADD4:inst
+Cout <= ADD1:inst5.Cout
+A[0] => ADD1:inst.A
+A[1] => ADD1:inst1.A
+A[2] => ADD1:inst4.A
+A[3] => ADD1:inst5.A
+B[0] => ADD1:inst.B
+B[1] => ADD1:inst1.B
+B[2] => ADD1:inst4.B
+B[3] => ADD1:inst5.B
+Cin => ADD1:inst.Cin
+S[0] <= ADD1:inst.S
+S[1] <= ADD1:inst1.S
+S[2] <= ADD1:inst4.S
+S[3] <= ADD1:inst5.S
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst|ADD4:inst|ADD1:inst5
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst|ADD4:inst|ADD1:inst4
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst|ADD4:inst|ADD1:inst1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MUL2TEST|MUL2:inst|ADD8:inst|ADD4:inst|ADD1:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN1
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+

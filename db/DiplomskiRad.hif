@@ -1,0 +1,390 @@
+Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+32
+1913
+OFF
+OFF
+OFF
+ON
+ON
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+MUL1TEST
+# storage
+db|DiplomskiRad.(0).cnf
+db|DiplomskiRad.(0).cnf
+# case_insensitive
+# source_file
+MUL1TEST.bdf
+a46fe8d3818a361f8314e539182ebefe
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+MUL1
+# storage
+db|DiplomskiRad.(1).cnf
+db|DiplomskiRad.(1).cnf
+# case_insensitive
+# source_file
+MUL1.bdf
+21f4af937dd4a6cd3722f83be35a69d
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+RisingEdgeDetector
+# storage
+db|DiplomskiRad.(2).cnf
+db|DiplomskiRad.(2).cnf
+# case_insensitive
+# source_file
+RisingEdgeDetector.bdf
+6537ac53c6db9ea1669a627a99151260
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MUL2:inst|RisingEdgeDetector:inst40
+}
+# macro_sequence
+
+# end
+# entity
+REG4
+# storage
+db|DiplomskiRad.(3).cnf
+db|DiplomskiRad.(3).cnf
+# case_insensitive
+# source_file
+REG4.bdf
+213034996290908798453cf33a16e64d
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+REG2
+# storage
+db|DiplomskiRad.(4).cnf
+db|DiplomskiRad.(4).cnf
+# case_insensitive
+# source_file
+REG2.bdf
+1fbe6d5b96f0fa24d6c7c587c65bebc
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+REG1
+# storage
+db|DiplomskiRad.(5).cnf
+db|DiplomskiRad.(5).cnf
+# case_insensitive
+# source_file
+REG1.bdf
+1ff6f356ad8ff763384871794bc59f42
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+REG8_LD_ST
+# storage
+db|DiplomskiRad.(6).cnf
+db|DiplomskiRad.(6).cnf
+# case_insensitive
+# source_file
+REG8_LD_ST.bdf
+ccfccf4055cd1e1750a93b313e44b4ea
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MUL2:inst|REG8_LD_ST:inst5
+}
+# macro_sequence
+
+# end
+# entity
+REG4_LD_ST
+# storage
+db|DiplomskiRad.(7).cnf
+db|DiplomskiRad.(7).cnf
+# case_insensitive
+# source_file
+REG4_LD_ST.bdf
+66fb70f8990691ca4de258677827da
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst1
+MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst
+MUL2:inst|REG4_LD_ST:inst44
+MUL2:inst|REG4_LD_ST:inst39
+}
+# macro_sequence
+
+# end
+# entity
+REG2_LD_ST
+# storage
+db|DiplomskiRad.(8).cnf
+db|DiplomskiRad.(8).cnf
+# case_insensitive
+# source_file
+REG2_LD_ST.bdf
+34335e8915fa6169e0b160df97da45d0
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst1|REG2_LD_ST:inst1
+MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst1|REG2_LD_ST:inst
+MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst|REG2_LD_ST:inst1
+MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst|REG2_LD_ST:inst
+MUL2:inst|REG4_LD_ST:inst44|REG2_LD_ST:inst1
+MUL2:inst|REG4_LD_ST:inst44|REG2_LD_ST:inst
+MUL2:inst|REG4_LD_ST:inst39|REG2_LD_ST:inst1
+MUL2:inst|REG4_LD_ST:inst39|REG2_LD_ST:inst
+}
+# macro_sequence
+
+# end
+# entity
+REG1_LD_CL
+# storage
+db|DiplomskiRad.(9).cnf
+db|DiplomskiRad.(9).cnf
+# case_insensitive
+# source_file
+REG1_LD_CL.bdf
+256af25662958d13851e3761f943d1a7
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst1|REG2_LD_ST:inst1|REG1_LD_CL:inst5
+MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst1|REG2_LD_ST:inst1|REG1_LD_CL:inst
+MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst1|REG2_LD_ST:inst|REG1_LD_CL:inst5
+MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst1|REG2_LD_ST:inst|REG1_LD_CL:inst
+MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst|REG2_LD_ST:inst1|REG1_LD_CL:inst5
+MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst|REG2_LD_ST:inst1|REG1_LD_CL:inst
+MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst|REG2_LD_ST:inst|REG1_LD_CL:inst5
+MUL2:inst|REG8_LD_ST:inst5|REG4_LD_ST:inst|REG2_LD_ST:inst|REG1_LD_CL:inst
+MUL2:inst|REG4_LD_ST:inst44|REG2_LD_ST:inst1|REG1_LD_CL:inst5
+MUL2:inst|REG4_LD_ST:inst44|REG2_LD_ST:inst1|REG1_LD_CL:inst
+MUL2:inst|REG4_LD_ST:inst44|REG2_LD_ST:inst|REG1_LD_CL:inst5
+MUL2:inst|REG4_LD_ST:inst44|REG2_LD_ST:inst|REG1_LD_CL:inst
+MUL2:inst|REG4_LD_ST:inst39|REG2_LD_ST:inst1|REG1_LD_CL:inst5
+MUL2:inst|REG4_LD_ST:inst39|REG2_LD_ST:inst1|REG1_LD_CL:inst
+MUL2:inst|REG4_LD_ST:inst39|REG2_LD_ST:inst|REG1_LD_CL:inst5
+MUL2:inst|REG4_LD_ST:inst39|REG2_LD_ST:inst|REG1_LD_CL:inst
+}
+# macro_sequence
+
+# end
+# entity
+ADD8
+# storage
+db|DiplomskiRad.(10).cnf
+db|DiplomskiRad.(10).cnf
+# case_insensitive
+# source_file
+ADD8.bdf
+825b3b847527b03a2992f72a8263826
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MUL2:inst|ADD8:inst4
+MUL2:inst|ADD8:inst3
+MUL2:inst|ADD8:inst2
+MUL2:inst|ADD8:inst
+}
+# macro_sequence
+
+# end
+# entity
+ADD4
+# storage
+db|DiplomskiRad.(11).cnf
+db|DiplomskiRad.(11).cnf
+# case_insensitive
+# source_file
+ADD4.bdf
+2cba4dd4cbdf4cb88869f3c3d276a65
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MUL2:inst|ADD8:inst4|ADD4:inst1
+MUL2:inst|ADD8:inst4|ADD4:inst
+MUL2:inst|ADD8:inst3|ADD4:inst1
+MUL2:inst|ADD8:inst3|ADD4:inst
+MUL2:inst|ADD8:inst2|ADD4:inst1
+MUL2:inst|ADD8:inst2|ADD4:inst
+MUL2:inst|ADD8:inst|ADD4:inst1
+MUL2:inst|ADD8:inst|ADD4:inst
+}
+# macro_sequence
+
+# end
+# entity
+ADD1
+# storage
+db|DiplomskiRad.(12).cnf
+db|DiplomskiRad.(12).cnf
+# case_insensitive
+# source_file
+ADD1.bdf
+89e8bd201fec1aedb88ad12337dec97
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst5
+MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst4
+MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst1
+MUL2:inst|ADD8:inst4|ADD4:inst1|ADD1:inst
+MUL2:inst|ADD8:inst4|ADD4:inst|ADD1:inst5
+MUL2:inst|ADD8:inst4|ADD4:inst|ADD1:inst4
+MUL2:inst|ADD8:inst4|ADD4:inst|ADD1:inst1
+MUL2:inst|ADD8:inst4|ADD4:inst|ADD1:inst
+MUL2:inst|ADD8:inst3|ADD4:inst1|ADD1:inst5
+MUL2:inst|ADD8:inst3|ADD4:inst1|ADD1:inst4
+MUL2:inst|ADD8:inst3|ADD4:inst1|ADD1:inst1
+MUL2:inst|ADD8:inst3|ADD4:inst1|ADD1:inst
+MUL2:inst|ADD8:inst3|ADD4:inst|ADD1:inst5
+MUL2:inst|ADD8:inst3|ADD4:inst|ADD1:inst4
+MUL2:inst|ADD8:inst3|ADD4:inst|ADD1:inst1
+MUL2:inst|ADD8:inst3|ADD4:inst|ADD1:inst
+MUL2:inst|ADD8:inst2|ADD4:inst1|ADD1:inst5
+MUL2:inst|ADD8:inst2|ADD4:inst1|ADD1:inst4
+MUL2:inst|ADD8:inst2|ADD4:inst1|ADD1:inst1
+MUL2:inst|ADD8:inst2|ADD4:inst1|ADD1:inst
+MUL2:inst|ADD8:inst2|ADD4:inst|ADD1:inst5
+MUL2:inst|ADD8:inst2|ADD4:inst|ADD1:inst4
+MUL2:inst|ADD8:inst2|ADD4:inst|ADD1:inst1
+MUL2:inst|ADD8:inst2|ADD4:inst|ADD1:inst
+MUL2:inst|ADD8:inst|ADD4:inst1|ADD1:inst5
+MUL2:inst|ADD8:inst|ADD4:inst1|ADD1:inst4
+MUL2:inst|ADD8:inst|ADD4:inst1|ADD1:inst1
+MUL2:inst|ADD8:inst|ADD4:inst1|ADD1:inst
+MUL2:inst|ADD8:inst|ADD4:inst|ADD1:inst5
+MUL2:inst|ADD8:inst|ADD4:inst|ADD1:inst4
+MUL2:inst|ADD8:inst|ADD4:inst|ADD1:inst1
+MUL2:inst|ADD8:inst|ADD4:inst|ADD1:inst
+}
+# macro_sequence
+
+# end
+# entity
+REG8
+# storage
+db|DiplomskiRad.(13).cnf
+db|DiplomskiRad.(13).cnf
+# case_insensitive
+# source_file
+REG8.bdf
+e4f89f125d84f158abe767ec00299b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+MUL2TEST
+# storage
+db|DiplomskiRad.(14).cnf
+db|DiplomskiRad.(14).cnf
+# case_insensitive
+# source_file
+MUL2TEST.bdf
+2da5ae2e7fa6bf225072b8854cdf63fe
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+MUL2
+# storage
+db|DiplomskiRad.(15).cnf
+db|DiplomskiRad.(15).cnf
+# case_insensitive
+# source_file
+MUL2.bdf
+9dce35bf89ac31f878366e131c66e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MUL2:inst
+}
+# macro_sequence
+
+# end
+# complete
+
